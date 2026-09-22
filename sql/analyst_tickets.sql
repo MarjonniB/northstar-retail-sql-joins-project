@@ -78,6 +78,21 @@ Practice focus: INNER JOIN
 
 -- Write your query below:
 
+SELECT 
+	o.OrderID,
+	p.ProductID,
+	p.ProductName,
+	p.ProductCategory,
+	o.Quantity,
+	p.UnitPrice
+FROM dbo.Orders AS o
+INNER JOIN dbo.Products AS p
+ON o.ProductID = p.ProductID
+ORDER BY o.OrderID;
+
+--Joined Orders to Products using ProductID.
+--Returned 80 matching orders with order details. 
+--Sorted by OrderID ascending.
 
 
 /* ============================================================
