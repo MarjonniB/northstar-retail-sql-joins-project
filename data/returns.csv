@@ -1,0 +1,13 @@
+ReturnID,OrderID,ReturnDate,ReturnReason
+3001,2003,2026-05-31,Changed mind
+3002,2008,2026-07-04,Damaged item
+3003,2015,2026-04-01,Wrong item
+3004,2021,2026-03-19,Defective
+3005,2030,2026-06-15,Arrived late
+3006,2038,2026-02-18,Not as expected
+3007,2046,2026-05-09,Changed mind
+3008,2055,2026-03-10,Damaged item
+3009,2063,2026-08-27,Wrong item
+3010,2074,2026-05-05,Defective
+3011,2077,2026-06-25,Arrived late
+3012,2079,2026-07-27,Not as expected

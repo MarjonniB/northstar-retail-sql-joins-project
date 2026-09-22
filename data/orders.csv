@@ -1,0 +1,81 @@
+OrderID,CustomerID,ProductID,SalesRepID,OrderDate,Quantity,OrderStatus,PaymentMethod
+2001,8,2,2,2026-01-23,7,Completed,Debit Card
+2002,13,12,2,2026-07-07,3,Completed,PayPal
+2003,10,3,4,2026-05-28,2,Pending,Credit Card
+2004,18,17,2,2026-06-17,7,Completed,PayPal
+2005,15,17,2,2026-01-12,7,Cancelled,Bank Transfer
+2006,2,9,2,2026-08-24,5,Completed,Bank Transfer
+2007,7,6,5,2026-07-11,2,Shipped,Debit Card
+2008,17,11,4,2026-06-30,4,Completed,Debit Card
+2009,2,15,1,2026-07-29,4,Shipped,Bank Transfer
+2010,10,7,4,2026-02-07,1,Completed,Bank Transfer
+2011,1,1,2,2026-04-30,7,Pending,Debit Card
+2012,6,13,2,2026-02-19,1,Completed,Debit Card
+2013,17,13,5,2026-03-12,4,Completed,Debit Card
+2014,1,6,2,2026-08-16,1,Pending,Debit Card
+2015,12,4,5,2026-03-27,3,Shipped,PayPal
+2016,21,3,2,2026-06-27,1,Completed,Bank Transfer
+2017,16,5,5,2026-07-15,3,Pending,PayPal
+2018,7,3,3,2026-07-02,6,Cancelled,Bank Transfer
+2019,6,17,3,2026-06-03,6,Shipped,PayPal
+2020,4,2,1,2026-07-05,1,Pending,Debit Card
+2021,18,8,2,2026-03-13,4,Shipped,Credit Card
+2022,13,10,3,2026-07-07,5,Cancelled,Debit Card
+2023,1,8,1,2026-07-20,4,Completed,Bank Transfer
+2024,7,9,5,2026-04-26,3,Shipped,Debit Card
+2025,16,13,3,2026-04-12,4,Pending,Credit Card
+2026,19,6,4,2026-04-12,7,Pending,Credit Card
+2027,12,10,1,2026-08-26,4,Pending,Bank Transfer
+2028,11,8,2,2026-05-19,5,Shipped,Credit Card
+2029,17,2,1,2026-01-07,6,Completed,PayPal
+2030,5,16,5,2026-06-08,2,Shipped,Debit Card
+2031,9,6,3,2026-08-17,1,Shipped,Credit Card
+2032,10,11,4,2026-08-31,6,Completed,Bank Transfer
+2033,14,15,5,2026-01-09,3,Completed,PayPal
+2034,13,4,4,2026-01-21,2,Shipped,Debit Card
+2035,8,16,3,2026-01-21,4,Cancelled,Credit Card
+2036,18,6,2,2026-03-01,7,Completed,Credit Card
+2037,5,14,2,2026-06-13,3,Pending,Credit Card
+2038,19,5,2,2026-02-10,1,Completed,Credit Card
+2039,6,14,1,2026-07-04,6,Completed,Credit Card
+2040,18,16,4,2026-05-14,7,Pending,Debit Card
+2041,5,4,3,2026-04-09,4,Completed,Bank Transfer
+2042,10,10,1,2026-03-23,6,Completed,PayPal
+2043,14,2,2,2026-05-15,4,Completed,Bank Transfer
+2044,19,17,3,2026-08-20,2,Pending,Debit Card
+2045,14,6,1,2026-06-26,7,Pending,Debit Card
+2046,18,16,1,2026-04-30,3,Completed,PayPal
+2047,1,4,5,2026-01-15,1,Completed,Bank Transfer
+2048,16,6,3,2026-08-08,5,Completed,PayPal
+2049,15,4,4,2026-03-03,4,Completed,Debit Card
+2050,21,15,5,2026-02-07,4,Completed,Bank Transfer
+2051,16,15,3,2026-04-22,7,Completed,Debit Card
+2052,19,8,1,2026-04-18,4,Pending,PayPal
+2053,13,7,2,2026-01-12,5,Pending,Credit Card
+2054,18,4,3,2026-04-10,5,Shipped,PayPal
+2055,9,9,4,2026-02-28,6,Completed,Bank Transfer
+2056,14,14,5,2026-08-09,3,Completed,Debit Card
+2057,17,6,2,2026-01-09,5,Cancelled,Bank Transfer
+2058,13,16,4,2026-03-20,4,Cancelled,Debit Card
+2059,16,4,3,2026-03-20,7,Shipped,Bank Transfer
+2060,14,10,2,2026-07-08,6,Cancelled,Bank Transfer
+2061,19,6,5,2026-06-21,6,Completed,Bank Transfer
+2062,13,11,2,2026-01-12,1,Pending,Bank Transfer
+2063,19,9,4,2026-08-25,1,Shipped,PayPal
+2064,9,8,4,2026-06-17,4,Pending,Credit Card
+2065,21,1,2,2026-05-30,4,Completed,Credit Card
+2066,9,4,4,2026-05-13,5,Completed,Debit Card
+2067,16,16,4,2026-01-31,5,Shipped,Debit Card
+2068,21,3,2,2026-05-13,3,Pending,Credit Card
+2069,10,17,5,2026-08-17,7,Completed,PayPal
+2070,19,16,4,2026-07-19,4,Completed,Bank Transfer
+2071,15,2,3,2026-03-27,3,Completed,Bank Transfer
+2072,3,13,4,2026-03-21,4,Completed,Debit Card
+2073,1,2,1,2026-04-15,2,Completed,Credit Card
+2074,2,4,5,2026-05-02,4,Shipped,PayPal
+2075,7,8,2,2026-05-18,3,Completed,Debit Card
+2076,13,12,3,2026-06-07,2,Pending,Credit Card
+2077,19,9,4,2026-06-21,1,Completed,Bank Transfer
+2078,4,16,1,2026-07-10,5,Cancelled,Credit Card
+2079,8,13,2,2026-07-22,2,Shipped,PayPal
+2080,20,17,4,2026-08-11,3,Completed,Debit Card

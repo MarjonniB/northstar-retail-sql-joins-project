@@ -1,0 +1,25 @@
+CustomerID,CustomerName,City,State,RegionID,CustomerType
+1,Avery Johnson,Sacramento,CA,1,Consumer
+2,Monica Reyes,Folsom,CA,1,Consumer
+3,Derek Chen,Seattle,WA,1,Small Business
+4,Priya Patel,Portland,OR,1,Corporate
+5,Jordan Williams,Phoenix,AZ,1,Consumer
+6,Taylor Morgan,Denver,CO,1,Small Business
+7,Sofia Martinez,Austin,TX,2,Consumer
+8,Marcus Reed,Dallas,TX,2,Corporate
+9,Nina Brooks,Atlanta,GA,2,Small Business
+10,Ethan Walker,Miami,FL,2,Consumer
+11,Olivia Bennett,Charlotte,NC,2,Corporate
+12,Caleb Foster,Nashville,TN,2,Consumer
+13,Grace Kim,Chicago,IL,3,Corporate
+14,Noah Thompson,Detroit,MI,3,Consumer
+15,Maya Robinson,Columbus,OH,3,Small Business
+16,Liam Carter,Minneapolis,MN,3,Consumer
+17,Emma Collins,Kansas City,MO,3,Small Business
+18,Henry Adams,Indianapolis,IN,3,Corporate
+19,Chloe Rivera,New York,NY,4,Consumer
+20,Daniel Lee,Boston,MA,4,Corporate
+21,Amelia Scott,Philadelphia,PA,4,Small Business
+22,Lucas Green,Baltimore,MD,4,Consumer
+23,Zoe Turner,Newark,NJ,4,Small Business
+24,Samuel King,Richmond,VA,4,Corporate
