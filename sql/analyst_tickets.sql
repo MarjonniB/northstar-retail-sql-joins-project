@@ -115,6 +115,24 @@ Practice focus: LEFT JOIN
 
 -- Write your query below:
 
+SELECT 
+	c.CustomerID,
+	c.CustomerName,
+	C.CustomerType,
+	o.OrderID,
+	o.OrderDate,
+	o.OrderStatus
+FROM dbo.Customers AS c
+LEFT JOIN dbo.Orders AS o
+ON c.CustomerID = o.CustomerID
+ORDER BY c.CustomerID, o.OrderID;
+
+-- Joined all customers with any matching orders.
+-- Customers without orders are still included with NULL order fields.
+-- Validation: 83 rows returned.
+-- Sorted by CustomerID, then OrderID.
+
+
 
 
 /* ============================================================
