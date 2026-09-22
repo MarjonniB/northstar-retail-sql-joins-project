@@ -1,3 +1,5 @@
+USE NorthstarJoinsDB
+
 /*
 Northstar Retail - SQL JOINs Project
 File: analyst_tickets.sql
@@ -38,6 +40,22 @@ Practice focus: INNER JOIN
 ============================================================ */
 
 -- Write your query below:
+SELECT 
+	o.OrderID,
+	o.OrderDate,
+	c.CustomerID,
+	c.CustomerName,
+	c.State,
+	o.OrderStatus
+FROM dbo.Orders as o
+INNER JOIN dbo.Customers AS c
+ON o.CustomerID = c.CustomerID
+ORDER BY o.OrderID;
+
+-- Joined Orders to Customers using CustomerID.
+-- Returned 80 matching order records with customer details.
+-- Sorted by OrderID ascending.
+
 
 
 

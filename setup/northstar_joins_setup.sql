@@ -281,7 +281,7 @@ VALUES
 GO
 
 -- Basic verification only. These are not project answers.
-SELECT 'Regions' AS TableName, COUNT(*) AS RowCount FROM dbo.Regions
+SELECT 'Regions' AS TableName, COUNT(*) AS TotalCount FROM dbo.Regions
 UNION ALL SELECT 'Customers', COUNT(*) FROM dbo.Customers
 UNION ALL SELECT 'Products', COUNT(*) FROM dbo.Products
 UNION ALL SELECT 'SalesReps', COUNT(*) FROM dbo.SalesReps
