@@ -198,7 +198,20 @@ Practice focus: FULL OUTER JOIN
 ============================================================ */
 
 -- Write your query below:
+SELECT 
+	p.ProductID AS ProductCatelogID,
+	p.ProductName,
+	i.ProductID AS InventoryProductID,
+	i.StockOnHand,
+	i.WarehouseZone
+FROM dbo.Products AS p
+FULL JOIN dbo.InventorySnapshot AS i
+ON p.ProductID = i.ProductID
+ORDER BY p.ProductID, i.ProductID;
 
+-- Joined the current Products table with the legacy InventorySnapshot table.
+-- Returned 22 rows, including matched and unmatched ProductIDs from both tables.
+-- Sorted by Products.ProductID, then InventorySnapshot.ProductID.
 
 
 /* ============================================================
