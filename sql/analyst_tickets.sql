@@ -159,6 +159,20 @@ Note: Build the query so InventorySnapshot is the RIGHT table.
 
 -- Write your query below:
 
+SELECT 
+	i.ProductID AS InventoryProductID,
+	p.ProductName,
+	p.ProductCategory,
+	i.StockOnHand,
+	i.WarehouseZone
+FROM  dbo.Products as p
+RIGHT JOIN dbo.InventorySnapshot AS i
+ON i.ProductID	= p.ProductID
+ORDER BY i.ProductID;
+
+--Joined Products with InventorySnapshot using ProductID
+--Returned 18 records to include all records from InventorySnapshot
+--Sorted by Inventory ProductID
 
 
 /* ============================================================
