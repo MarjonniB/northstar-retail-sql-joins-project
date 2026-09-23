@@ -266,8 +266,20 @@ Note: Practice this using RIGHT JOIN.
 ============================================================ */
 
 -- Write your query below:
+SELECT 
+	i.ProductID AS InventoryProductID,
+	i.StockOnHand,
+	i.WarehouseZone,
+	i.SnapshotDate
+FROM dbo.Products AS p
+RIGHT JOIN dbo.InventorySnapshot AS i
+	ON i.ProductID = p.ProductID
+WHERE p.ProductID IS NULL
+ORDER BY i.ProductID;
 
-
+-- Returned inventory snapshot records with no matching current ProductID.
+--Validation: 2 snapshot records returned
+--Sorted by Inventory Product ID
 
 /* ============================================================
 TICKET 08 — Unmatched Product Records
