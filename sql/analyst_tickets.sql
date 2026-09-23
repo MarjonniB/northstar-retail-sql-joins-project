@@ -231,7 +231,20 @@ Practice focus: LEFT ANTI JOIN pattern
 ============================================================ */
 
 -- Write your query below:
+SELECT 
+	c.CustomerID,
+	c.CustomerName,
+	c.State,
+	c.CustomerType
+FROM dbo.Customers AS c
+LEFT JOIN dbo.Orders AS o
+ON c.CustomerID = o.CustomerID
+WHERE o.OrderID IS NULL
+ORDER BY c.CustomerName;
 
+-- Returned customers with no matching orders.
+-- Validation: 3 customers returned.
+-- Sorted alphabetically by CustomerName.
 
 
 /* ============================================================
