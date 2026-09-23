@@ -339,7 +339,18 @@ Practice focus: CROSS JOIN
 ============================================================ */
 
 -- Write your query below:
+SELECT 
+	s.SalesRepID,
+	s.SalesRepName,
+	r.RegionID,
+	r.RegionName
+FROM dbo.SalesReps AS s
+CROSS JOIN dbo.Regions AS r
+ORDER BY s.SalesRepID, r.RegionID;
 
+-- Created every possible SalesRep and Region combination.
+-- Validation: 24 combinations returned.
+-- Sorted by SalesRepID, then RegionID.
 
 
 /* ============================================================
