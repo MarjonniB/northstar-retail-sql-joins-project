@@ -305,7 +305,20 @@ Practice focus: FULL ANTI JOIN pattern
 ============================================================ */
 
 -- Write your query below:
+SELECT 
+	p.ProductID,
+	p.ProductName,
+	i.ProductID AS LegacyProductID,
+	i.StockOnHand,
+	i.WarehouseZone
+FROM dbo.Products AS p
+FULL JOIN dbo.InventorySnapshot AS i
+	ON p.ProductID = i.ProductID
+WHERE i.ProductID IS NULL
+	OR p.ProductID IS NULL;
 
+-- Returned records that exist on only one side of Products and InventorySnapshot.
+-- Validation: 6 unmatched records returned.
 
 
 /* ============================================================
