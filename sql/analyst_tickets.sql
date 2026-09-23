@@ -374,7 +374,26 @@ Also reuse your filtering skills from Project 1.
 ============================================================ */
 
 -- Write your query below:
+SELECT 
+	o.OrderID,
+	c.CustomerName,
+	c.State,
+	r.RegionName,
+	o.OrderDate,
+	o.OrderStatus
+FROM dbo.Customers AS c
+INNER JOIN dbo.Regions AS r
+	ON c.RegionID = r.RegionID
+INNER JOIN dbo.Orders AS o
+	ON c.CustomerID = o.CustomerID
+WHERE (o.OrderStatus = 'Pending' OR o.OrderStatus = 'Shipped') 
+	AND r.RegionName = 'WEST'
+ORDER BY o.OrderDate DESC;
 
+--Created west-region customers only with orders pending or shipped
+--Validation: 8 records returned 
+--Sorted by OrderDate newest to oldest
+--INNER JOINED used to find matching orders
 
 
 /* ============================================================
