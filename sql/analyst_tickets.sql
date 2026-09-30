@@ -556,3 +556,35 @@ Do not use concepts beyond what you have learned.
 
 -- Write your query below:
 
+SELECT 
+	o.OrderID,
+	o.OrderDate,
+	c.CustomerName,
+	c.State,
+	re.RegionName,
+	p.ProductName,
+	p.ProductCategory,
+	o.Quantity,
+	p.UnitPrice,
+	s.SalesRepName,
+	o.OrderStatus,
+	r.ReturnDate,
+	r.ReturnReason
+FROM dbo.Orders AS o
+INNER JOIN dbo.Customers AS c
+	ON o.CustomerID = c.CustomerID
+LEFT JOIN dbo.Returns AS r
+	ON o.OrderID = r.OrderID
+INNER JOIN dbo.Products AS p
+	ON o.ProductID = p.ProductID
+INNER JOIN dbo.SalesReps AS s
+	ON s.SalesRepID = o.SalesRepID
+INNER JOIN dbo.Regions as re
+	ON c.RegionID = re.RegionID
+WHERE o.OrderStatus IN ('Shipped', 'Completed')
+AND o.OrderDate BETWEEN '2026-04-01' AND '2026-06-30'
+ORDER BY o.OrderDate, o.OrderID;
+
+--Returned orders between April 1st, through June 30th 2026 showing completed or shipped with orders returned or not returned. 
+--Validation: 19 records returned
+--Ascending Order By Order Date and ID
