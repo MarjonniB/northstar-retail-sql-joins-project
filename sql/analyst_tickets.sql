@@ -475,6 +475,41 @@ Practice focus: MULTIPLE TABLE JOINs
 ============================================================ */
 
 -- Write your query below:
+SELECT 
+	r.ReturnID,
+	o.OrderID,
+	r.ReturnDate,
+	r.ReturnReason,
+	c.CustomerName,
+	p.ProductName,
+	o.Quantity,
+	o.OrderStatus
+FROM dbo.Returns AS r
+INNER JOIN dbo.Orders AS o
+	ON r.OrderID = o.OrderID	
+INNER JOIN dbo.Customers AS c
+	ON c.CustomerID = o.CustomerID
+INNER JOIN dbo.Products AS p
+	ON o.ProductID = p.ProductID
+ORDER BY r.ReturnDate DESC;
+
+--Returned orders that have been returned.
+--Validation: 12 records returned. 
+--Ordered by Return Date, newest to oldest.
+--Complete returned order investigation
+
+--DEBUGGING--
+/*
+SELECT COUNT(*)
+FROM dbo.Returns AS r
+INNER JOIN dbo.Orders AS o
+    ON r.OrderID = o.OrderID
+INNER JOIN dbo.Customers AS c
+	ON c.CustomerID = o.CustomerID
+INNER JOIN dbo.Products AS p
+	ON o.ProductID = p.ProductID 
+*/
+	
 
 
 
