@@ -424,6 +424,30 @@ Practice focus: MULTIPLE TABLE JOINs
 
 -- Write your query below:
 
+SELECT 
+	o.OrderID,
+	o.OrderDate,
+	c.CustomerName,
+	c.State,
+	p.ProductName,
+	p.ProductCategory,
+	o.Quantity,
+	p.UnitPrice,
+	s.SalesRepName,
+	o.OrderStatus
+FROM dbo.Orders AS o
+INNER JOIN dbo.Customers AS c
+	ON c.CustomerID = o.CustomerID
+INNER JOIN dbo.Products AS p
+	ON o.ProductID = p.ProductID
+INNER JOIN dbo.SalesReps AS s
+	ON o.SalesRepID = s.SalesRepID
+ORDER BY o.OrderID;
+
+--Created an Order report with Customers, Products, and the Sales Reps
+--Validation: 80 records returned 
+--Sorted by Ascending order by the Order ID
+
 
 
 /* ============================================================
